@@ -134,7 +134,13 @@
   window.addEventListener('load', () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
-        scrollto(window.location.hash)
+        let header = select('#header')
+        let offset = header.offsetHeight
+        let elementPos = select(window.location.hash).offsetTop
+        window.scrollTo({
+          top: elementPos - offset,
+          behavior: 'auto'
+        })
       }
     }
   });
@@ -162,9 +168,36 @@
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select('#portfolio-flters li, #portfolio-flters-nav li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      const getCourseFilter = (filterElement) => {
+        const filter = filterElement.getAttribute('data-filter');
+        if (filter) return filter;
+
+        const courseName = filterElement.textContent.trim();
+        if (courseName === 'All') return '*';
+
+        return function(itemElement) {
+          const category = itemElement.querySelector('.portfolio-info p');
+          const categoryName = category ? category.textContent.trim() : '';
+
+          if (courseName === 'Mobile App Development') {
+            return categoryName === 'Mobile App Development' || categoryName === 'App';
+          }
+
+          if (courseName === 'UI/UX') {
+            return categoryName === 'UI/UX' || categoryName === 'Card' || categoryName === 'Web';
+          }
+
+          return categoryName === courseName;
+        }
+      };
+
+      portfolioFilters.forEach(function(el) {
+        el.removeAttribute('onclick');
+      });
+
+      on('click', '#portfolio-flters li, #portfolio-flters-nav li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
@@ -172,7 +205,7 @@
         this.classList.add('filter-active');
 
         portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
+          filter: getCourseFilter(this)
         });
 
       }, true);
