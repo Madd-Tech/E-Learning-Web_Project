@@ -1,8 +1,12 @@
+(function() {
+  const isSubdir = window.location.pathname.includes('/courses/');
+  const basePath = isSubdir ? '../' : '';
+
+  const template = `
 <footer id="footer">
   <div class="footer-top">
     <div class="container">
       <div class="row">
-
         <div class="col-lg-3 col-md-6">
           <div class="footer-info">
             <h3>W3<span style="color: rgba(39, 124, 30, 1);">School</span></h3>
@@ -25,32 +29,23 @@
         <div class="col-lg-2 col-md-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}index.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}index.html#about">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses.html">Courses</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>W3School</h4>
+          <h4>Our Courses</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="courses/web-development.html">Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="courses/python-programming.html">Python Programming</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="courses/data-science.html">Data Science</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="courses/mobile-app-development.html">Mobile Apps</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="courses/ai-engineering.html">AI Engineering</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/web-development.html">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/python-programming.html">Python Programming</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/data-science.html">Data Science</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/mobile-app-development.html">Mobile Apps</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/ai-engineering.html">AI Engineering</a></li>
           </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to get the latest courses, tips, and exclusive offers delivered straight to your inbox.</p>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
-
         </div>
 
       </div>
@@ -59,10 +54,14 @@
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong><span>MaddCourse</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>W3School</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Develop by <a href="https://bootstrapmade.com/">khrllhmr</a>
     </div>
   </div>
-</footer><!-- End Footer -->
+</footer>
+  `;
+
+  document.write(template);
+})();

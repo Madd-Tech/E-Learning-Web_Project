@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Web Development Course - MaddCourse E-Learning</title>
+    <meta
+      content="Master HTML, CSS, JavaScript, and modern frameworks. Build responsive websites with our comprehensive Web Development course."
+      name="description"
+    />
+    <meta
+      content="web development, HTML, CSS, JavaScript, frontend, backend"
+      name="keywords"
+    />
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/animate.css/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/laravel.css" />
+    <style>
+      .course .chapter[hidden] {
+        display: none;
+      }
+
+      .chapter-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .chapter-navigation button {
+        min-width: 120px;
+      }
+
+      .chapter-indicator {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header (Component) ======= -->
+    <script src="../components/header.js"></script>
+
+    <main class="web-development">
+      <div class="top">
+        <img src="../assets/img/portfolio/laravel.jpg" alt="" />
+        <div class="desc"></div>
+      </div>
+
+      <div class="article">
+        <h2>Laravel Course</h2>
+        <article>
+          Laravel is a free, open-source PHP web framework used for building web
+          applications. It follows the Model-View-Controller (MVC) architectural
+          pattern, which helps organize code cleanly by separating the
+          application's logic from its user interface.
+          <br />
+          <br />
+          <b>Why Developers use it?</b>
+          <br />
+          <br />
+          Laravel is known as a "batteries-included" framework. Instead of
+          building core features—like user login, database connections, and
+          security measures—from scratch, developers can rely on Laravel's
+          built-in tools. This drastically speeds up development time and
+          promotes clean, maintainable code.
+        </article>
+        <br />
+        <article>
+          <b>Key Features: </b>
+          <ul>
+            <li>
+              <strong>Eloquent ORM: </strong> An intuitive and elegant way to
+              interact with your database using PHP instead of writing complex
+              SQL queries.
+            </li>
+            <li>
+              <strong>MVC Architecture: </strong> Automatically separates your
+              code into Models (data), Views (user interface), and Controllers
+              (logic), making your application organized and easy to maintain.
+            </li>
+            <li>
+              <strong>Security Features: </strong> Includes built-in protection
+              against common web vulnerabilities like SQL injection, cross-site
+              scripting (XSS), and cross-site request forgery (CSRF).
+            </li>
+            <li>
+              <strong>Artisan Console: </strong> A command-line interface (CLI)
+              tool that automates repetitive tasks such as database migrations,
+              code generation, and cache clearing.
+            </li>
+            <li>
+              <strong>Routing System: </strong> A simple yet powerful system for
+              defining how your application responds to incoming web requests.
+            </li>
+            <li>
+              <strong>Blade Templating Engine: </strong> A fast, simple, and
+              elegant templating engine that allows you to write clean PHP code
+              within your HTML.
+            </li>
+          </ul>
+        </article>
+        <hr />
+        <br />
+        <div class="course">
+          <div class="chapter" data-chapter="1">
+            <b>Chapter #1: Laravel Architecture & Request Lifecycle</b> <br />
+            <hr />
+            <p>
+              Laravel is a robust, open-source PHP web framework engineered to
+              streamline common web development paradigms such as routing,
+              authentication, sessions, and caching. It enforces the
+              Model-View-Controller (MVC) architectural design pattern.
+            </p>
+            <br />
+
+            <div class="sub-chapter">
+              <b>1. The Request Lifecycle</b> <br />
+              <p>
+                Understanding the entry point and execution lifecycle of a
+                Laravel application is essential for building highly performant
+                applications:
+              </p>
+              <ul>
+                <li>
+                  <strong>Entry Point:</strong> All HTTP requests enter the
+                  application through the public script
+                  <span class="span-text">public/index.php.</span>
+                </li>
+                <li>
+                  <strong>HTTP Kernel: </strong> The request is sent to the HTTP
+                  Kernel (
+                  <span class="span-text">App\Http\Kernel</span>
+                  or framework core), which configures error handling, logging,
+                  and detects the application environment.
+                </li>
+                <li>
+                  <strong>Service Providers: </strong>
+                  The Kernel bootstraps the core Service Providers. These
+                  modules bind various infrastructure engines (database, queue,
+                  routing) into the Service Container.
+                </li>
+                <li>
+                  <strong>Routing Pipeline: </strong>
+                  Once the application is bootstrapped, the request is passed
+                  through global and route specific Middleware to ensure
+                  validation, encryption, and authentication standards are
+                  satisfied before reaching its matching controller endpoint.
+                </li>
+              </ul>
+              <div class="box-model-container">
+                <h2 class="box-model-title">The Service Container</h2>
+                <p class="box-model-desc">
+                  The Service Container is a fundamental component of Laravel,
+                  responsible for managing class dependencies. It acts as a
+                  central registry that binds classes, interfaces, or
+                  configurations, and resolves them on demand. This promotes
+                  loose coupling, making the application easier to test and
+                  maintain.
+                </p>
+              </div> <br>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/W0KFGXx1HG8?si=pOcBZIEv0IVQjeJt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br />
+          </div> 
+          <hr class="chapter-divider" />
+          <div class="chapter" data-chapter="2" hidden>
+            <b>Chapter #2: Routing, Middleware, & Controllers</b> <br />
+            <hr />
+            <p>
+              The HTTP routing tier defines the public application pathways and
+              maps incoming client requests directly to execution endpoints.
+            </p>
+            <div class="sub-chapter">
+              <b>1. Declarative Web Routing</b>
+              <p>
+                Routes are declared in files located inside the CSRF protection
+                are maintained in
+                <span class="span-text">routes/</span> directory. Web routes
+                utilizing session states and
+                <span class="span-text">routes/web.php .</span>
+              </p>
+              <div style="display: flex; gap: 1em">
+                <div class="outline-card-child">
+                  <strong><i>Code: </i></strong>
+                  <img
+                    style="border: 1px solid black; width: 40em; height: 20em"
+                    src="img/web-routing.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <br />
+              <br />
+              <b>2. HTTP Middleware Layers</b>
+              <p>
+                Middleware structures act as defensive layers isolating
+                application controllers. They execute code blocks before or
+                after a request moves deeper into core application layers.
+              </p>
+              <p>
+                Modern design relies on declarative CSS systems instead of
+                old-fashioned absolute floats:
+              </p>
+              <ul>
+                <li>
+                  <strong>Before Middleware: </strong> Performs actions such as
+                  checking user authentication tokens or validating payload
+                  schemas.
+                </li>
+                <li>
+                  <strong>After Middleware: </strong> Modifies the out-going
+                  response payload or appends custom cookie variables to header
+                  outputs.
+                </li>
+              </ul>
+              <b>3. Controllers</b>
+              <p>
+                Controllers isolate HTTP transaction processing from background
+                data layers. Rather than declaring fat closure executions inside
+                route mapping files, related logic is clustered inside custom
+                controller classes.
+              </p>
+              <img
+                style="width: 40em; height: 25em"
+                src="img/Controller.png"
+                alt=""
+              />
+              <br />
+              <br />
+
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/yf9SSaFodpw?si=Zt4_tomRAo_UERg2"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div> 
+          <div class="chapter" data-chapter="3">
+            <b>Chapter #3: Database Persistency & Eloquent ORM</b> <br />
+            <hr />
+            <p>
+              Laravel provides an integrated object-relational mapping mechanism
+              called **Eloquent ORM**. Every database table maps directly to a
+              matching Model class structure.
+            </p>
+            <strong>1. Database Migrations</strong>
+            <p>
+              Migrations serve as version-control systems for application schema
+              models. They allow developers to programmatic-ally alter
+              structural tables across varied application environments.
+            </p>
+            <img
+              style="width: 40em; height: 25em"
+              src="img/Migration.png"
+              alt=""
+            />
+            <br />
+
+            <strong>2. Eloquent Relationships</strong>
+            <p>
+              Eloquent simplifies complex database operations by managing
+              relational joins through intuitive methods:
+            </p>
+            <img
+              style="width: 50em; height: 15em"
+              src="img/Mapping_cardinality.png"
+              alt=""
+            />
+            <br />
+            <img style="width: 40em; height: 20em" src="img/model.png" alt="" />
+            <br />
+
+            <br />
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/tPpUzK10Ml4?si=x5jYQkmbFzL9i0Kj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br />
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/TdEZcP1JTf8?si=HixTsEWzZjosWP3a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="chapter-navigation">
+            <button
+              class="btn btn-success"
+              id="prevChapter"
+              type="button"
+              disabled
+            >
+              Previous
+            </button>
+            <span class="chapter-indicator" id="chapterIndicator"
+              >Chapter 1 of 2</span
+            >
+            <button class="btn btn-success" id="nextChapter" type="button">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="pdf">
+        <p>Or you can download the Pdf files here.</p>
+        <button class="btn btn-success">
+          <a class="text-white" href="pdf.course/laravel.pdf"
+            >Download PDF</a
+          >
+        </button>
+      </div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer (Component) ======= -->
+    <script src="../components/footer.js"></script>
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Initialize Swiper for this page -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Swiper !== "undefined") {
+          new Swiper(".course-details-slider", {
+            speed: 600,
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            slidesPerView: 1,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "bullets",
+              clickable: true,
+            },
+          });
+        }
+
+        const chapters = document.querySelectorAll(
+          ".course .chapter[data-chapter]",
+        );
+        const divider = document.querySelector(".chapter-divider");
+        const prevButton = document.getElementById("prevChapter");
+        const nextButton = document.getElementById("nextChapter");
+        const indicator = document.getElementById("chapterIndicator");
+        let currentChapter = 0;
+
+        if (!chapters.length || !prevButton || !nextButton || !indicator) {
+          return;
+        }
+
+        function showChapter(index) {
+          chapters.forEach((chapter, chapterIndex) => {
+            chapter.hidden = chapterIndex !== index;
+          });
+
+          if (divider) {
+            divider.hidden = true;
+          }
+
+          prevButton.disabled = index === 0;
+          nextButton.disabled = index === chapters.length - 1;
+          indicator.textContent = `Chapter ${index + 1} of ${chapters.length}`;
+        }
+
+        prevButton.addEventListener("click", function () {
+          if (currentChapter > 0) {
+            currentChapter -= 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        nextButton.addEventListener("click", function () {
+          if (currentChapter < chapters.length - 1) {
+            currentChapter += 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        showChapter(currentChapter);
+      });
+    </script>
+  </body>
+</html>

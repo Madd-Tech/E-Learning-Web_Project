@@ -1,271 +1,434 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Web Development Course - MaddCourse E-Learning</title>
+    <meta
+      content="Master HTML, CSS, JavaScript, and modern frameworks. Build responsive websites with our comprehensive Web Development course."
+      name="description"
+    />
+    <meta
+      content="web development, HTML, CSS, JavaScript, frontend, backend"
+      name="keywords"
+    />
 
-  <title>Data Science & Machine Learning - MaddCourse E-Learning</title>
-  <meta content="Turn data into insights with Python, R, and machine learning. Our Data Science course covers statistics, ML algorithms, and deep learning." name="description">
-  <meta content="data science, machine learning, python, statistics, deep learning, AI" name="keywords">
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/animate.css/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/data-science.css" />
+    <style>
+      .course .chapter[hidden] {
+        display: none;
+      }
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-</head>
+      .chapter-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
 
-<body>
+      .chapter-navigation button {
+        min-width: 120px;
+      }
 
-  <!-- ======= Header (Component) ======= -->
-  <div data-component="components/header.html"></div>
+      .chapter-indicator {
+        font-weight: 600;
+      }
+    </style>
+  </head>
 
-  <main id="main">
+  <body>
+    <!-- ======= Header (Component) ======= -->
+    <script src="../components/header.js"></script>
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Data Science & Machine Learning</h2>
-          <ol>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../courses.html">Courses</a></li>
-            <li>Data Science & ML</li>
-          </ol>
-        </div>
+    <main class="web-development">
+      <div class="top">
+        <img src="../assets/img/portfolio/Data_Science.jpg" alt="" />
+        <div class="desc"></div>
       </div>
-    </section>
 
-    <!-- ======= Course Details Section ======= -->
-    <section id="course-details" class="course-details">
-      <div class="container">
-        <div class="row gy-4">
+      <div class="article">
+        <h2>Data Science & Machine Learning Course</h2>
+        <br />
+        <hr />
+        <br />
+        <div class="course">
+          <div class="chapter" data-chapter="1">
+            <b>Chapter #1: The Data Science Pipeline</b> <br />
+            <hr />
+            <p>
+              Data Science is an interdisciplinary paradigm that combines domain
+              expertise, programming skills, and mathematical foundations to
+              extract actionable insights from structured and unstructured
+              datasets.
+            </p>
+            <br />
 
-          <div class="col-lg-8">
-            <div class="course-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-3.jpg" alt="Data Science Course">
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-details-1.jpg" alt="Machine Learning Models">
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-details-3.jpg" alt="Data Visualization">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <div class="course-description mt-4">
-              <h2>About This Course</h2>
+            <div class="sub-chapter">
+              <b>1. Data Preprocessing & Cleaning</b> <br />
               <p>
-                Data is the new oil, and this course teaches you how to refine it. Our Data Science & Machine Learning program is a rigorous, comprehensive journey through statistics, data wrangling, machine learning algorithms, and deep learning frameworks. You'll learn to extract meaningful insights from complex datasets and build predictive models that drive real business decisions.
+                Raw analytical infrastructure is often incomplete or
+                inconsistent. Transforming data into clean execution matrices
+                involves several core tasks:
               </p>
-              <p>
-                Using industry-standard tools like Python, Pandas, Scikit-learn, TensorFlow, and Jupyter Notebooks, you'll tackle real datasets from finance, healthcare, and e-commerce. Each module includes hands-on labs and capstone projects that mirror what data scientists do in production environments.
-              </p>
-
-              <h3 class="mt-4">What You'll Learn</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="course-learn-list">
-                    <li><i class="bi bi-check-circle-fill"></i> Statistics & probability fundamentals</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Data cleaning with Pandas & NumPy</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Supervised & unsupervised learning</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Feature engineering techniques</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="course-learn-list">
-                    <li><i class="bi bi-check-circle-fill"></i> Neural networks & deep learning</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Model evaluation & hyperparameter tuning</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Data visualization with Matplotlib & Seaborn</li>
-                    <li><i class="bi bi-check-circle-fill"></i> ML deployment with Flask</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="course-curriculum mt-4">
-              <h2>Course Curriculum</h2>
-              <div class="accordion" id="curriculumAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1" aria-expanded="true">
-                      <span class="module-number">Module 1</span> Statistics & Data Foundations
-                      <span class="module-duration"><i class="bi bi-clock"></i> 3 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module1" class="accordion-collapse collapse show" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Descriptive Statistics & Probability <span class="lesson-duration">60 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Hypothesis Testing & Confidence Intervals <span class="lesson-duration">55 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> NumPy & Pandas Deep Dive <span class="lesson-duration">70 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Data Cleaning & Preprocessing <span class="lesson-duration">65 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Project: Exploratory Data Analysis <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module2">
-                      <span class="module-number">Module 2</span> Machine Learning Algorithms
-                      <span class="module-duration"><i class="bi bi-clock"></i> 3 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Linear & Logistic Regression <span class="lesson-duration">65 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Decision Trees & Random Forests <span class="lesson-duration">60 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> SVM & K-Nearest Neighbors <span class="lesson-duration">55 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Cross-Validation & Model Selection <span class="lesson-duration">50 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Project: House Price Prediction <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module3">
-                      <span class="module-number">Module 3</span> Unsupervised Learning & NLP
-                      <span class="module-duration"><i class="bi bi-clock"></i> 3 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> K-Means & Hierarchical Clustering <span class="lesson-duration">55 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> PCA & Dimensionality Reduction <span class="lesson-duration">50 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Text Processing & NLP Basics <span class="lesson-duration">65 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Sentiment Analysis Pipeline <span class="lesson-duration">60 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Project: Customer Segmentation <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module4">
-                      <span class="module-number">Module 4</span> Deep Learning & Neural Networks
-                      <span class="module-duration"><i class="bi bi-clock"></i> 3 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module4" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Neural Network Fundamentals <span class="lesson-duration">70 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> TensorFlow & Keras Introduction <span class="lesson-duration">65 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> CNNs for Image Classification <span class="lesson-duration">75 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> RNNs & Time Series Forecasting <span class="lesson-duration">60 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Project: Image Classifier <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module5">
-                      <span class="module-number">Module 5</span> ML Deployment & Capstone
-                      <span class="module-duration"><i class="bi bi-clock"></i> 2 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module5" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Model Serialization & APIs <span class="lesson-duration">50 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Deploying ML Models with Flask <span class="lesson-duration">60 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> MLOps & Model Monitoring <span class="lesson-duration">55 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Capstone: End-to-End ML Pipeline <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="course-info-card">
-              <h3>Course Information</h3>
               <ul>
-                <li><strong><i class="bi bi-tag"></i> Category</strong>: Data Science</li>
-                <li><strong><i class="bi bi-person"></i> Instructor</strong>: Dr. James Lee</li>
-                <li><strong><i class="bi bi-clock"></i> Duration</strong>: 14 Weeks</li>
-                <li><strong><i class="bi bi-bar-chart"></i> Level</strong>: Intermediate to Advanced</li>
-                <li><strong><i class="bi bi-people"></i> Enrolled</strong>: 1,860 Students</li>
-                <li><strong><i class="bi bi-translate"></i> Language</strong>: English</li>
                 <li>
-                  <strong><i class="bi bi-star"></i> Rating</strong>:
-                  <span class="rating-stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                  </span>
-                  4.7 / 5.0
+                  <strong>Imputation of Missing Values:</strong>Values:
+                  Strategies include dropping sparse attributes, replacing
+                  numeric gaps with mean/median metrics, or leveraging advanced
+                  predictive tracking models.
+                </li>
+                <li>
+                  <strong>Feature Encoding: </strong> Converting categorical
+                  strings into logical numeric vectors using methods like
+                  One-Hot Encoding or Label Encoding.
+                </li>
+                <li>
+                  <strong>Feature Scaling: </strong>
+                  Standardizing numeric variables to prevent mathematical
+                  variance using Standardization (Z-score normalizations) or
+                  Min-Max Normalization techniques.
                 </li>
               </ul>
-              <a href="#" class="enroll-now-btn"><i class="bi bi-mortarboard"></i> Enroll Now</a>
+              <br />
             </div>
-            <div class="course-features-card mt-4">
-              <h3>This Course Includes</h3>
-              <ul class="course-features-list">
-                <li><i class="bi bi-camera-video"></i> 50+ Hours of Video Content</li>
-                <li><i class="bi bi-file-earmark-code"></i> 5 Capstone Projects</li>
-                <li><i class="bi bi-download"></i> Datasets & Jupyter Notebooks</li>
-                <li><i class="bi bi-infinity"></i> Lifetime Access</li>
-                <li><i class="bi bi-phone"></i> Mobile & Desktop Access</li>
-                <li><i class="bi bi-award"></i> Certificate of Completion</li>
-              </ul>
+            <br />
+          </div>
+          <hr class="chapter-divider" />
+          <div class="chapter" data-chapter="2" hidden>
+            <b>Chapter #2: Core Fundamentals</b> <br />
+            <hr />
+            <p>
+              Writing structured Python programs requires understanding
+              fundamental variable components and operational control flows.
+            </p>
+            <div class="sub-chapter">
+              <b>1. Variables and Built-in Data Types</b> <br />
+              <img
+                style="width: 30em; height: 10em"
+                src="img/variable-datatypes.png"
+                alt=""
+              />
+              <br />
+              <br />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/LKFrQXaoSMQ?si=cxdhFg44zFs4yg9H"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <br />
+              <br />
+              <b>2. Control Flow Structures</b>
+              <p>
+                Conditional structures and iterative loops orchestrate the
+                execution flow of code modules.
+              </p>
+              <strong>Conditional Statements (if-elif-else)</strong> <br />
+              <div class="outline-card">
+                score = 85 <br /><br />
+                if score >= 90: <br />
+                print("Grade: A") <br /><br />
+                elif score >= 80: <br /><br />
+                print("Grade: B") <br /><br />
+                else: <br /><br />
+                print("Grade: C") <br />
+              </div>
+              <br />
+              <strong>Loops (for & while)</strong> <br />
+              <div class="outline-card">
+                # For Loop: Iterating through a fixed range sequence <br />
+                for i in range(3): <br />
+                print(f"Iteration index: {i}") <br />
+                # While Loop: Executing actions while conditional rules persist
+                <br />
+                count = 0 <br />
+                while count < 3: <br />
+                print(f"Count: {count}") <br />
+                count += 1 <br />
+              </div>
+              <br />
+
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Mg6B3RsMd54?si=roetXMLhHJ1XZ5h_"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
-
+          <div class="chapter" data-chapter="3">
+            <b>Chapter #3: Data Structures</b> <br />
+            <hr />
+            <p>
+              Python features built-in container architectures designed to
+              cluster data records systematically.
+            </p>
+            <img
+              style="width: 40em; height: 15em"
+              src="img/python-data-structures.png"
+              alt=""
+            />
+            <br />
+            <div class="outline-card">
+              # Working with a List programming_languages = ["Python",
+              "JavaScript", "C#"]<br /><br />
+              programming_languages.append("Go")<br />
+              # Working with a Dictionary<br />
+              user_profile = { "username": "coder_99",<br />
+              "level": 5<br />
+              }<br />
+              print(user_profile["username"])
+            </div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SVjXp22ddFQ?si=Xv4HmIB2-zPwSBLF"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <br />
+          </div>
+          <div class="chapter" data-chapter="4">
+            <b>Chapter #4: Functions & Object-Oriented Programming</b>
+            <hr />
+            <br />
+            <strong>1. Reusable Functions</strong>
+            <p>
+              Functions isolate specific execution paths into reusable program
+              modules.
+            </p>
+            <div class="outline-card">
+              def calculate_area(width, height):<br /><br />
+              return width * height<br /><br />
+              # Invoking the function block<br />
+              result = calculate_area(5, 10)<br /><br />
+              print(f"Calculated Area: {result}")<br />
+            </div>
+            <br />
+            <strong>2. Object Oriented Programming (OOP)</strong>
+            <p>
+              Classes and objects map operational code blocks directly to
+              real-world structural entities.
+            </p>
+            <div class="outline-card">
+              class SmartDevice: <br />
+              # The Constructor Method <br />
+              def __init__(self, device_name, operating_system): <br />
+              self.name = device_name # Instance attribute <br />
+              self.os = operating_system # Instance attribute <br />
+              # Custom Instance Method <br />
+              def boot_up(self): <br />
+              return f"{self.name} running {self.os} is powering on..." <br />
+              # Instantiating an Object from the Class blueprint <br />
+              my_phone = SmartDevice("Pixel 8", "Android") <br />
+              print(my_phone.boot_up()) <br />
+            </div>
+            <br />
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/rLyYb7BFgQI?si=GdjVcgVqc0keT-iB"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="chapter-navigation">
+            <button
+              class="btn btn-success"
+              id="prevChapter"
+              type="button"
+              disabled
+            >
+              Previous
+            </button>
+            <span class="chapter-indicator" id="chapterIndicator"
+              >Chapter 1 of 2</span
+            >
+            <button class="btn btn-success" id="nextChapter" type="button">
+              Next
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="pdf">
+        <p>Or you can download the Pdf files here.</p>
+        <button class="btn btn-success">
+          <a
+            class="text-white"
+            href="pdf.course/Python_Programming_Fundamentals.pdf"
+            >Download PDF</a
+          >
+        </button>
+      </div>
+    </main>
+    <!-- End #main -->
 
-  </main>
+    <!-- ======= Footer (Component) ======= -->
+    <script src="../components/footer.js"></script>
 
-  <div data-component="components/footer.html"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
 
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/js/component-loader.js"></script>
-  <script src="../assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new Swiper('.course-details-slider', {
-        speed: 600, loop: true, autoplay: { delay: 5000, disableOnInteraction: false },
-        slidesPerView: 1, pagination: { el: '.swiper-pagination', type: 'bullets', clickable: true }
+    <!-- Initialize Swiper for this page -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Swiper !== "undefined") {
+          new Swiper(".course-details-slider", {
+            speed: 600,
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            slidesPerView: 1,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "bullets",
+              clickable: true,
+            },
+          });
+        }
+
+        const chapters = document.querySelectorAll(
+          ".course .chapter[data-chapter]",
+        );
+        const divider = document.querySelector(".chapter-divider");
+        const prevButton = document.getElementById("prevChapter");
+        const nextButton = document.getElementById("nextChapter");
+        const indicator = document.getElementById("chapterIndicator");
+        let currentChapter = 0;
+
+        if (!chapters.length || !prevButton || !nextButton || !indicator) {
+          return;
+        }
+
+        function showChapter(index) {
+          chapters.forEach((chapter, chapterIndex) => {
+            chapter.hidden = chapterIndex !== index;
+          });
+
+          if (divider) {
+            divider.hidden = true;
+          }
+
+          prevButton.disabled = index === 0;
+          nextButton.disabled = index === chapters.length - 1;
+          indicator.textContent = `Chapter ${index + 1} of ${chapters.length}`;
+        }
+
+        prevButton.addEventListener("click", function () {
+          if (currentChapter > 0) {
+            currentChapter -= 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        nextButton.addEventListener("click", function () {
+          if (currentChapter < chapters.length - 1) {
+            currentChapter += 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        showChapter(currentChapter);
       });
-    });
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>

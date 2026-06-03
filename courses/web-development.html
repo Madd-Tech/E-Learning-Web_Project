@@ -1,76 +1,558 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Web Development Course - W3School E-Learning</title>
+    <meta
+      content="Master HTML, CSS, JavaScript, and modern frameworks. Build responsive websites with our comprehensive Web Development course."
+      name="description"
+    />
+    <meta
+      content="web development, HTML, CSS, JavaScript, frontend, backend"
+      name="keywords"
+    />
 
-  <title>Web Development Course - MaddCourse E-Learning</title>
-  <meta content="Master HTML, CSS, JavaScript, and modern frameworks. Build responsive websites with our comprehensive Web Development course." name="description">
-  <meta content="web development, HTML, CSS, JavaScript, frontend, backend" name="keywords">
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/animate.css/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/web-development.css" />
+    <style>
+      .course .chapter[hidden] {
+        display: none;
+      }
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/web-development.css">
-</head>
+      .chapter-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
 
-<body>
+      .chapter-navigation button {
+        min-width: 120px;
+      }
 
-  <!-- ======= Header (Component) ======= -->
-  <div data-component="components/header.html"></div>
+      .chapter-indicator {
+        font-weight: 600;
+      }
+    </style>
+  </head>
 
-  <main id="web-development">
+  <body>
+    <!-- ======= Header (Component) ======= -->
+    <script src="../components/header.js"></script>
 
+    <main class="web-development">
+      <div class="top">
+        <img src="../assets/img/portfolio/Web_Development.jpg" alt="" />
+        <div class="desc"></div>
+      </div>
 
-  </main><!-- End #main -->
+      <div class="article">
+        <h2>Web Development Course</h2>
+        <article>
+          Web development is the process of creating, building, and maintaining
+          websites and web applications that run on the internet. It involves
+          coding, designing, and programming to ensure digital platforms are
+          fast, secure, and user-friendly.
+          <br />
+          <br />
+          The field is generally divided into three main areas:
+        </article>
+        <br />
+        <article>
+          <b>1. Front-End Development (Client-Side)</b>
+          <p>
+            This is everything users actually see and interact with in their web
+            browsers, such as layouts, colors, and menus.
+          </p>
+          <ul>
+            <li>
+              <strong>HTML: </strong> Defines the structure and content of the
+              webpage.
+            </li>
+            <li>
+              <strong>CSS: </strong>Controls the styling, visual layout, and
+              responsiveness across different devices.
+            </li>
+            <li>
+              <strong>JavaScript: </strong>Adds interactivity, dynamic content,
+              and complex features to the website.
+            </li>
+          </ul>
+          <br />
+          <b>2. Back-End Development (Server-Side)</b>
+          <p>
+            This part handles server logic, databases, and application
+            functionality that users don't see directly.
+          </p>
+          <br />
+          <b>3. Full-Stack Development</b>
+          <p>
+            This involves working on both front-end and back-end parts of a
+            website.
+          </p>
+        </article>
+        <hr />
+        <br />
+        <div class="course">
+          <div class="chapter" data-chapter="1">
+            <b>Chapter #1: The Architecture of the Website</b> <br />
+            <hr />
+            <p>
+              Web development operates on a distributed architectural model
+              where resource consumers (clients) request assets from centralized
+              providers (servers). Understanding this core infrastructure is
+              essential for building scalable, responsive, and secure web
+              applications.
+            </p>
+            <br />
 
-  <!-- ======= Footer (Component) ======= -->
-  <div data-component="components/footer.html"></div>
+            <div class="sub-chapter">
+              <b>1. The Client-Server Model</b> <br />
+              <p>
+                Every interaction on the World Wide Web follows the foundational
+                Client-Server paradigm:
+              </p>
+              <ul>
+                <li>
+                  <strong>Client(Frontend):</strong> The user-facing application
+                  interface, typically a web browser (e.g., Chrome, Firefox,
+                  Safari). It renders UI components, captures user input, and
+                  manages local states.
+                </li>
+                <li>
+                  <strong>Server(Backend): </strong> A computer system or cloud
+                  instance optimized to process incoming requests, execute
+                  business logic, query databases, and return structured
+                  payloads.
+                </li>
+              </ul>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+              <div class="outline-card">
+                <b style="font-size: medium">The Lifecycle of a request</b>
+                <br />
+                <p>
+                  1. User inputs a URL → 2. DNS Resolution translates name to IP
+                  → 3. Browser initiates TCP/IP connection → 4. HTTP Request
+                  sent → 5. Server processes & returns HTTP Response → 6.
+                  Browser renders document.
+                </p>
+              </div>
+  
+            </div>
+            <br />
+            <div class="sub-chapter">
+              <b>2. Internet Infrastructure & Protocols</b> <br />
+              <p>
+                To communicate reliably, machines rely on standardized
+                networking suites and application protocols:
+              </p>
+              <ul>
+                <li>
+                  <strong>IP Addressing & DNS</strong> <br />
+                  <p>
+                    Every machine on a network has an Internet Protocol address
+                    (IPv4 or IPv6). Because numeric strings are unreadable to
+                    users, the Domain Name System (DNS) acts as the telephone
+                    directory of the web, translating human-readable domains
+                    (e.g., example.com ) into operational IP routing targets
+                  </p>
+                </li>
+                <li>
+                  <strong>HTTP/HTTPS Protocol</strong> <br />
+                  <p>
+                    The Hypertext Transfer Protocol (HTTP) is an
+                    application-layer framework governing data formats. It
+                    operates via standard request verbs:
+                  </p>
+                  <img
+                    style="width: 30em; height: 10em; border: 1px solid black"
+                    src="img/get&post.png"
+                    alt=""
+                  />
+                  <br />
+                  <br />
+                  <p>
+                    <strong>HTTP </strong> secures this workflow by adding a
+                    cryptographic Transport Layer Security (TLS) layer over
+                    HTTP, encrypting all communication packets to prevent
+                    interception or tampering.
+                  </p>
+                </li>
+              </ul>
+              <br />
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yioOQ4ItYuo?si=XD-GaB-Gc9QdVtOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <hr class="chapter-divider" />
+          <div class="chapter" data-chapter="2" hidden>
+            <b>Chapter #2: Frontend Engineering Fundamentals</b> <br />
+            <hr />
+            <p>
+              Web development operates on a distributed architectural model
+              where resource consumers (clients) request assets from centralized
+              providers (servers). Understanding this core infrastructure is
+              essential for building scalable, responsive, and secure web
+              applications.
+            </p>
+            <div class="sub-chapter">
+              <b>1. Semantic HTML 5</b>
+              <p>
+                HyperText Markup Language (HTML) establishes document hierarchy.
+                Modern web standards emphasize
+                <strong>Semantic HTML</strong>—using tags that accurately
+                describe the purpose of the enclosed content rather than using
+                generic container structures like generic unstyled divisions.
+              </p>
+              <div style="display: flex; gap: 1em">
+                <div class="outline-card-child">
+                  <strong><i>Code: </i></strong>
+                  <img
+                    style="border: 1px solid black; width: 30em; height: 20em"
+                    src="img/code.png"
+                    alt=""
+                  />
+                </div>
 
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
+                <div class="outline-card-child">
+                  <strong><i>Result : </i></strong>
+                  <div class="outline-card" style="width: 40em">
+                    <!doctype html>
+                    <html lang="en">
+                      <head>
+                        <meta charset="UTF-8" />
+                        <title>Semantic Layout Sample</title>
+                      </head>
+                      <body>
+                        <header>
+                          <nav>
+                            <a href="#home">Home</a>
+                          </nav>
+                        </header>
+                        <main>
+                          <article>
+                            <h1>Understanding Semantic Elements</h1>
+                            <p>
+                              Semantic tags improve SEO indexing and maximize
+                              Accessibility standards.
+                            </p>
+                          </article>
+                        </main>
+                        <footer>
+                          <p>&copy; 2026 Fundamentals Guide</p>
+                        </footer>
+                      </body>
+                    </html>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <b>2. Cascading Style Sheet (CSS3)</b>
+              <p>
+                CSS targets DOM structural selections to orchestrate visuals.
+                The core engine is driven by the
+                <strong>CSS Box Model</strong>, which dictates the space
+                distribution for elements on layout surfaces.
+              </p>
 
-  <!-- Component Loader -->
-  <script src="../assets/js/component-loader.js"></script>
+              <div class="box-model-container">
+                <h2 class="box-model-title">The Box Model Spectrum</h2>
+                <p class="box-model-desc">
+                  Every HTML structural element translates to a rectangular
+                  footprint comprising four distinct properties:
+                </p>
+                <ul class="box-model-list">
+                  <li>
+                    <strong>Content:</strong> The text or media assets displayed
+                    inside the node boundary.
+                  </li>
+                  <li>
+                    <strong>Padding:</strong> Transparent internal space
+                    isolating content from borders.
+                  </li>
+                  <li>
+                    <strong>Border:</strong> Decorative line structures tracking
+                    margins of padding limits.
+                  </li>
+                  <li>
+                    <strong>Margin:</strong> External protective spacing
+                    separating nodes from external entities.
+                  </li>
+                </ul>
+              </div>
+              <br />
+              <strong style="font-size: larger"
+                >Modern Layout Frameworks</strong
+              >
+              <br />
+              <p>
+                Modern design relies on declarative CSS systems instead of
+                old-fashioned absolute floats:
+              </p>
+              <ul>
+                <li>
+                  <strong>Flexbox: </strong>One-dimensional alignment engine
+                  optimal for component toolbars, menus, and localized
+                  structural alignments.
+                </li>
+                <li>
+                  <strong>CSS Grid: </strong> Multi-dimensional structural
+                  layout engine providing predictable structural row and column
+                  scaffolding across wide dynamic views.
+                </li>
+              </ul>
+              <b>3. Javascript Programming Basic</b>
+              <p>
+                JavaScript (ECMAScript standards) transforms static documents
+                into interactive interfaces. It maps elements into an
+                addressable object hierarchy known as the
+                <strong>Document Object Model (DOM)</strong>
+              </p>
+              <img
+                style="width: 40em; height: 15em"
+                src="img/js-code.png"
+                alt=""
+              /> <br> <br>  
 
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/9-r0RuX0pqk?si=ULJMhErtDUcupogs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="chapter" data-chapter="3">
+            <b>Chapter #3: Backend & Data Management Architecture</b> <br />
+            <hr />
+            <p>
+              The backend abstracts business implementations, provides secure
+              access control boundaries, and maintains global state records
+              through persistence databases.
+            </p>
+            <strong>1. Server Logic Foundations</strong>
+            <p>
+              When clients transmit requests, backend logic determines
+              processing workflows. Applications run inside custom container
+              execution nodes, processing data through functional pipelines:
+            </p>
+            <ul>
+              <li>
+                <strong>Routing: </strong>Parsing URL expressions to map
+                execution workflows to targeted controllers.
+              </li>
+              <li>
+                <strong>State Orchestration: </strong> Validating structural
+                fields, authentication tokens, and calculating conditional logic
+                pathways.
+              </li>
+            </ul>
 
-  <!-- Initialize Swiper for this page -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new Swiper('.course-details-slider', {
-        speed: 600,
-        loop: true,
-        autoplay: { delay: 5000, disableOnInteraction: false },
-        slidesPerView: 1,
-        pagination: { el: '.swiper-pagination', type: 'bullets', clickable: true }
+            <strong>2. Building RESTful APIs</strong>
+            <p>
+              Representational State Transfer (REST) provides reliable
+              communication guidelines for networks. APIs are stateless
+              interfaces designed to exchange structured representations
+              (typically JSON formats).
+            </p>
+            <img
+              style="width: 30em; height: 15em"
+              src="img/restful-api.png"
+              alt=""
+            />
+            <p>
+              APIs use standard HTTP verbs to represent actions. When designing
+              an API, endpoints are structured using plural nouns to represent
+              resource collections.
+            </p>
+
+            <strong>3. Database System</strong>
+            <p>
+              Application states require persistent engines to survive process
+              termination cycles. These environments split into two standard
+              categories:
+            </p>
+            <strong>Relational Databases (SQL) </strong>
+            <p>
+              Systems like PostgreSQL, MySQL, and SQL Server organize records
+              into strict, predefined structural tables. They guarantee
+              transaction safety through explicit compliance mechanisms:
+            </p>
+            <ul>
+              <li>
+                <strong>Atomicity: </strong> Ensuring operations within a
+                transaction commit successfully or roll back completely.
+              </li>
+              <li>
+                <strong>Consistency: </strong> Validating that changes across
+                entities obey system rules.
+              </li>
+              <li>
+                <strong>Isolation: </strong>Validating that changes across
+                entities obey system rules.
+              </li>
+              <li>
+                <strong>Durability: </strong>Guaranteeing committed alterations
+                survive system failures.
+              </li>
+            </ul>
+            <strong>Non-Relational Databases (NoSQL)</strong>
+            <p>
+              Engines like MongoDB use highly flexible document object schemas
+              (BSON/JSON layouts) instead of fixed schemas, offering rapid read
+              and write horizontal scaling for massive unstructured datasets.
+            </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V3ZPPPKEipA?si=Qr53Qde5sOFSq3kS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wR0jg0eQsZA?si=JMRp6fRqnZM-diTd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="chapter-navigation">
+            <button
+              class="btn btn-success"
+              id="prevChapter"
+              type="button"
+              disabled
+            >
+              Previous
+            </button>
+            <span class="chapter-indicator" id="chapterIndicator"
+              >Chapter 1 of 2</span
+            >
+            <button class="btn btn-success" id="nextChapter" type="button">
+              Next
+            </button>
+          </div>
+
+          
+        </div>
+      </div>
+      <div class="pdf">
+            <p>Or you can download the Pdf files here.</p>
+            <button class=" btn btn-success">
+
+              <a class="text-white" href="pdf.course/web_development.pdf">Download PDF</a>
+            </button>
+          </div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer (Component) ======= -->
+    <script src="../components/footer.js"></script>
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Initialize Swiper for this page -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Swiper !== "undefined") {
+          new Swiper(".course-details-slider", {
+            speed: 600,
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            slidesPerView: 1,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "bullets",
+              clickable: true,
+            },
+          });
+        }
+
+        const chapters = document.querySelectorAll(
+          ".course .chapter[data-chapter]",
+        );
+        const divider = document.querySelector(".chapter-divider");
+        const prevButton = document.getElementById("prevChapter");
+        const nextButton = document.getElementById("nextChapter");
+        const indicator = document.getElementById("chapterIndicator");
+        let currentChapter = 0;
+
+        if (!chapters.length || !prevButton || !nextButton || !indicator) {
+          return;
+        }
+
+        function showChapter(index) {
+          chapters.forEach((chapter, chapterIndex) => {
+            chapter.hidden = chapterIndex !== index;
+          });
+
+          if (divider) {
+            divider.hidden = true;
+          }
+
+          prevButton.disabled = index === 0;
+          nextButton.disabled = index === chapters.length - 1;
+          indicator.textContent = `Chapter ${index + 1} of ${chapters.length}`;
+        }
+
+        prevButton.addEventListener("click", function () {
+          if (currentChapter > 0) {
+            currentChapter -= 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        nextButton.addEventListener("click", function () {
+          if (currentChapter < chapters.length - 1) {
+            currentChapter += 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        showChapter(currentChapter);
       });
-    });
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>
