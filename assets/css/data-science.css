@@ -57,8 +57,8 @@
     gap: 1em;
 }
 .box-model-container {
-      background-color: #ffc2c2; /* Light mint background */
-      border-left: 6px solid #731313; /* Dark green accent left border */
+      background-color: #c2ffec; /* Light mint background */
+      border-left: 6px solid #13736e; /* Dark green accent left border */
       border-radius: 4px;
       padding: 24px 32px;
       max-width: 800px;
@@ -67,7 +67,7 @@
 
     /* Heading Styling */
     .box-model-title {
-      color: #731313; /* Dark green text */
+      color: #0e5651; /* Dark green text */
       font-size: 1.25rem;
       font-weight: 700;
       margin-top: 0;
