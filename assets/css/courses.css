@@ -13,8 +13,8 @@
 }
 
 .web-development img{
-    width: 35em;
-    height:30em;
+    width: 50em;
+    height:35em;
     border-radius: 20px;
 }
 
@@ -58,7 +58,7 @@
 }
 .box-model-container {
       background-color: #ffc2c2; /* Light mint background */
-      border-left: 6px solid #731313; /* Dark green accent left border */
+    /* Dark green accent left border */
       border-radius: 4px;
       padding: 24px 32px;
       max-width: 800px;

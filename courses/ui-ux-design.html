@@ -1,241 +1,366 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>UI/UX Design Course - W3Schools E-Learning</title>
+    <meta
+      content="Master UI/UX Design Principles. Learn how to create visually appealing and user-friendly interfaces with our comprehensive UI/UX Design course."
+      name="description"
+    />
+    <meta
+      content="web development, HTML, CSS, JavaScript, frontend, backend"
+      name="keywords"
+    />
 
-  <title>UI/UX Design Course - MaddCourse E-Learning</title>
-  <meta content="Learn design principles and modern tools to create visually stunning, user-friendly interfaces. Master Figma, prototyping, and design systems." name="description">
-  <meta content="UI design, UX design, figma, prototyping, wireframing, user research" name="keywords">
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../assets/css/style.css" rel="stylesheet">
-</head>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/animate.css/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <script src="../components/header.js"></script>
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/courses.css" />
+    <style>
+      .course .chapter[hidden] {
+        display: none;
+      }
 
-  <main id="main">
+      .chapter-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
 
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>UI/UX Design</h2>
-          <ol>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../courses.html">Courses</a></li>
-            <li>UI/UX Design</li>
-          </ol>
-        </div>
+      .chapter-navigation button {
+        min-width: 120px;
+      }
+
+      .chapter-indicator {
+        font-weight: 600;
+      }
+      .box-model-container {
+        background-color: #fa96ff54;
+        border-left: 5px solid #b74a8d;
+      }
+      .box-model-title {
+        color: #b74a8d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header (Component) ======= -->
+    <script src="../components/header.js"></script>
+
+    <main class="web-development">
+      <div class="top">
+        <img src="../assets/img/portfolio/UIUX.jpg" alt="" />
+        <div class="desc"></div>
       </div>
-    </section>
 
-    <section id="course-details" class="course-details">
-      <div class="container">
-        <div class="row gy-4">
+      <div class="article">
+        <h2>UI/UX Design Course</h2>
+        <br />
+        <hr />
+        <br />
+        <div class="course">
+           <div class="chapter" data-chapter="1">
+            <b>Chapter #1: Introduction of UI/UX Design</b> <br />
+            <hr />
+            <p>
+              Though often grouped together as a single discipline, User
+              Interface (UI) and User Experience (UX) design represent two
+              distinct stages of product development. Together, they bridge the
+              gap between human psychology, visual aesthetics, and software
+              development.
+            </p>
+            <br />
 
-          <div class="col-lg-8">
-            <div class="course-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-5.jpg" alt="UI/UX Design Course">
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-details-2.jpg" alt="Design Process">
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-details-3.jpg" alt="UI Mockups">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <div class="course-description mt-4">
-              <h2>About This Course</h2>
+            <div class="sub-chapter">
+              <b>1. User Experience (UX) Design</b> <br />
               <p>
-                Great design is invisible — it just works. This UI/UX Design course teaches you how to think like a designer, from understanding user psychology to crafting pixel-perfect interfaces. You'll master industry-standard tools like Figma, learn to conduct user research, build wireframes and prototypes, and create comprehensive design systems.
+                UX design focuses on the architecture, structure, and overall
+                systemic flow of a digital product. It determines how a user
+                feels when interacting with the system, optimizing for
+                efficiency, emotional validation, and ease of navigation.
               </p>
+              <br />
+              <b>2. User Interface (UI) Design</b><br />
               <p>
-                Whether you want to become a full-time product designer or add design skills to your development toolkit, this course gives you the practical foundation to create interfaces that users love. Every module includes hands-on design challenges reviewed against real-world standards.
+                UI design translates structural wireframes into interactive
+                visual touchpoints. It focuses on typography, responsive
+                layouts, button styling, accessibility constraints, and color
+                harmony to construct an aesthetic system that matches the brand
+                identity.
               </p>
-
-              <h3 class="mt-4">What You'll Learn</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="course-learn-list">
-                    <li><i class="bi bi-check-circle-fill"></i> Design thinking methodology</li>
-                    <li><i class="bi bi-check-circle-fill"></i> User research & persona creation</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Wireframing & information architecture</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Figma mastery (from basics to pro)</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="course-learn-list">
-                    <li><i class="bi bi-check-circle-fill"></i> Color theory & typography</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Interactive prototyping & animation</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Design systems & component libraries</li>
-                    <li><i class="bi bi-check-circle-fill"></i> Usability testing & iteration</li>
-                  </ul>
-                </div>
+              <div class="box-model-container">
+                <h2 class="box-model-title">The Fundamental Symbiosis</h2>
+                <p class="box-model-desc">
+                  An exceptional UI with poor UX creates a beautiful interface
+                  that is frustrating to navigate. Conversely, an exceptional UX
+                  with poor UI yields a highly functional structure that feels
+                  unpolished and fails to establish user trust.
+                </p>
               </div>
             </div>
+            <br />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ODpB9-MCa5s?si=iaP4S-MHzacwDVT6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br />
+          </div> 
+          <hr class="chapter-divider" />
+           <div class="chapter" data-chapter="2" hidden>
+            <b>Chapter #2: Core Principles & Architecture Patterns</b> <br />
+            <hr />
+            <p>
+              Professional design pipelines rely on structured heuristics to
+              evaluate usability and ensure predictable interaction models.
+            </p>
+            <div class="sub-chapter">
+              <b>1. The Core Differences at a Glance</b> <br />
+              <img
+                style="width: 45em; height: 20em"
+                src="img/UIUX-core.png"
+                alt=""
+              />
+              <br />
 
-            <div class="course-curriculum mt-4">
-              <h2>Course Curriculum</h2>
-              <div class="accordion" id="curriculumAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1" aria-expanded="true">
-                      <span class="module-number">Module 1</span> Design Foundations & Research
-                      <span class="module-duration"><i class="bi bi-clock"></i> 2 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module1" class="accordion-collapse collapse show" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Introduction to Design Thinking <span class="lesson-duration">40 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> User Research Methods <span class="lesson-duration">55 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Creating User Personas & Journeys <span class="lesson-duration">50 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Information Architecture & Sitemaps <span class="lesson-duration">45 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Project: UX Research Report <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module2">
-                      <span class="module-number">Module 2</span> Wireframing & Visual Design
-                      <span class="module-duration"><i class="bi bi-clock"></i> 2 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Low-Fidelity Wireframing <span class="lesson-duration">45 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Color Theory & Palette Creation <span class="lesson-duration">50 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Typography & Visual Hierarchy <span class="lesson-duration">45 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Iconography & Illustration <span class="lesson-duration">40 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Project: Brand Style Guide <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module3">
-                      <span class="module-number">Module 3</span> Figma Mastery
-                      <span class="module-duration"><i class="bi bi-clock"></i> 2 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Figma Interface & Tools <span class="lesson-duration">50 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Components & Auto Layout <span class="lesson-duration">65 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Design Tokens & Variables <span class="lesson-duration">55 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Collaboration & Handoff <span class="lesson-duration">40 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Project: Mobile App Redesign <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module4">
-                      <span class="module-number">Module 4</span> Prototyping & Testing
-                      <span class="module-duration"><i class="bi bi-clock"></i> 2 Weeks</span>
-                    </button>
-                  </h2>
-                  <div id="module4" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
-                    <div class="accordion-body">
-                      <ul class="curriculum-lessons">
-                        <li><i class="bi bi-play-circle"></i> Interactive Prototyping in Figma <span class="lesson-duration">60 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Micro-Interactions & Animation <span class="lesson-duration">55 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Usability Testing Methods <span class="lesson-duration">50 min</span></li>
-                        <li><i class="bi bi-play-circle"></i> Design Systems & Component Libraries <span class="lesson-duration">65 min</span></li>
-                        <li><i class="bi bi-file-earmark-code"></i> Final Project: Complete App Design <span class="lesson-duration">Project</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="course-info-card">
-              <h3>Course Information</h3>
+              <br />
+              <br />
+              <b>2. Essential Laws of UX Design</b><br /><br />
               <ul>
-                <li><strong><i class="bi bi-tag"></i> Category</strong>: Design</li>
-                <li><strong><i class="bi bi-person"></i> Instructor</strong>: Emma Wilson</li>
-                <li><strong><i class="bi bi-clock"></i> Duration</strong>: 8 Weeks</li>
-                <li><strong><i class="bi bi-bar-chart"></i> Level</strong>: Beginner to Intermediate</li>
-                <li><strong><i class="bi bi-people"></i> Enrolled</strong>: 2,010 Students</li>
-                <li><strong><i class="bi bi-translate"></i> Language</strong>: English</li>
                 <li>
-                  <strong><i class="bi bi-star"></i> Rating</strong>:
-                  <span class="rating-stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                  </span>
-                  4.8 / 5.0
+                  <strong>Jacob's Law : </strong>Users spend most of their time
+                  on other websites. This means they expect your site or
+                  application to operate similarly to the design patterns they
+                  already understand.
+                </li>
+                <li>
+                  <strong>Fitt's Law : </strong> The time required to acquire a
+                  target is a function of the distance to and size of the
+                  target. Crucial action buttons (like checkout or save buttons)
+                  should be large and placed in accessible regions.
+                </li>
+                <li>
+                  <strong>Hick's Law : </strong>The time it takes to make a
+                  decision increases with the number and complexity of choices.
+                  Complex registration or onboarding tasks should be broken down
+                  into multi-step wizards to prevent user cognitive overload.
                 </li>
               </ul>
-              <a href="#" class="enroll-now-btn"><i class="bi bi-mortarboard"></i> Enroll Now</a>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/fYs2Mdyasuc?si=jG5Ki9-f95A5WIyt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="course-features-card mt-4">
-              <h3>This Course Includes</h3>
-              <ul class="course-features-list">
-                <li><i class="bi bi-camera-video"></i> 28+ Hours of Video Content</li>
-                <li><i class="bi bi-file-earmark-code"></i> 4 Design Projects</li>
-                <li><i class="bi bi-download"></i> Figma Templates & Resources</li>
-                <li><i class="bi bi-infinity"></i> Lifetime Access</li>
-                <li><i class="bi bi-phone"></i> Mobile & Desktop Access</li>
-                <li><i class="bi bi-award"></i> Certificate of Completion</li>
-              </ul>
-            </div>
+          </div> 
+          <div class="chapter" data-chapter="3">
+            <b>Chapter #3: Design Process & Developer Handover</b> <br />
+            <hr />
+            <p>
+              Enterprise UI/UX operations leverage the
+              <strong>Double Diamond</strong> design process framework, divided
+              into four distinct operational phases:
+            </p>
+            <br />
+            <strong>1. The Design Phases</strong> <br />
+            <ol>
+              <li>
+                <strong>Discover : </strong> Researching user pain points,
+                conducting empathy interviews, and gathering competitive market
+                insights
+              </li>
+              <li>
+                <strong>Define : </strong>
+                Synthesizing data into actionable User Personas and localized
+                problem statement hypotheses.
+              </li>
+              <li>
+                <strong>Develop : </strong>
+                Sketching structural ideas, structuring digital Information
+                Architectures (IA), and assembling clickable mid-fidelity
+                prototypes.
+              </li>
+              <li>
+                <strong>Deliver : </strong>
+                Running structured Usability Testing, refining interactive
+                details into a final high-fidelity system design, and building
+                the component-based Design System.
+              </li>
+            </ol>
+            <br />
+            <strong>2. Building a Design System</strong> <br />
+            <p>
+              A Design System is a single source of truth that stores reusable
+              visual assets and functional components governed by clear design
+              rules. It scales the product systematically and aligns design
+              artifacts directly with engineering code libraries:
+            </p>
+            <br />
+            <ul>
+              <li>
+                <strong>Design Tokens</strong>
+                Core style variables stored as key-value pairs (e.g., brand
+                colors, layout spacing grids, font sizes)
+              </li>
+              <li>
+                <strong>Atom Components : </strong>
+                Indivisible baseline items like primitive buttons, text input
+                blocks, and isolated icon sets
+              </li>
+              <li>
+                <strong>Molecule Assemblies : </strong>
+                Grouped components acting as a coordinated structure, such as a
+                search bar containing a text input field and a submit button.
+              </li>
+            </ul>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z6ElLJ8usLU?si=84VKPJN9CTguXsKG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-
+          <div class="chapter-navigation">
+            <button
+              class="btn btn-success"
+              id="prevChapter"
+              type="button"
+              disabled
+            >
+              Previous
+            </button>
+            <span class="chapter-indicator" id="chapterIndicator"
+              >Chapter 1 of 2</span
+            >
+            <button class="btn btn-success" id="nextChapter" type="button">
+              Next
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="pdf">
+        <p>Or you can download the Pdf files here.</p>
+        <button class="btn btn-success">
+          <a
+            class="text-white"
+            href="pdf.course/AI_Engineering.pdf
+            "
+            >Download PDF</a
+          >
+        </button>
+      </div>
+    </main>
+    <!-- End #main -->
 
-  </main>
+    <!-- ======= Footer (Component) ======= -->
+    <script src="../components/footer.js"></script>
 
-  <script src="../components/footer.js"></script>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  
-  <script src="../assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new Swiper('.course-details-slider', {
-        speed: 600, loop: true, autoplay: { delay: 5000, disableOnInteraction: false },
-        slidesPerView: 1, pagination: { el: '.swiper-pagination', type: 'bullets', clickable: true }
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Initialize Swiper for this page -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Swiper !== "undefined") {
+          new Swiper(".course-details-slider", {
+            speed: 600,
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            slidesPerView: 1,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "bullets",
+              clickable: true,
+            },
+          });
+        }
+
+        const chapters = document.querySelectorAll(
+          ".course .chapter[data-chapter]",
+        );
+        const divider = document.querySelector(".chapter-divider");
+        const prevButton = document.getElementById("prevChapter");
+        const nextButton = document.getElementById("nextChapter");
+        const indicator = document.getElementById("chapterIndicator");
+        let currentChapter = 0;
+
+        if (!chapters.length || !prevButton || !nextButton || !indicator) {
+          return;
+        }
+
+        function showChapter(index) {
+          chapters.forEach((chapter, chapterIndex) => {
+            chapter.hidden = chapterIndex !== index;
+          });
+
+          if (divider) {
+            divider.hidden = true;
+          }
+
+          prevButton.disabled = index === 0;
+          nextButton.disabled = index === chapters.length - 1;
+          indicator.textContent = `Chapter ${index + 1} of ${chapters.length}`;
+        }
+
+        prevButton.addEventListener("click", function () {
+          if (currentChapter > 0) {
+            currentChapter -= 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        nextButton.addEventListener("click", function () {
+          if (currentChapter < chapters.length - 1) {
+            currentChapter += 1;
+            showChapter(currentChapter);
+          }
+        });
+
+        showChapter(currentChapter);
       });
-    });
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>
