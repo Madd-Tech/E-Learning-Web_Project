@@ -13,9 +13,11 @@
 }
 
 .web-development img{
-    width: 50em;
-    height:35em;
+    width: 100%;
+    max-width: 50em;
+    height: auto;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .article{
@@ -44,17 +46,25 @@
 }
 
 .outline-card{
-   width:50em;
+   width: 100% !important;
+   max-width: 50em;
    font-size: smaller;
    padding:10px;
    border-radius:10px;
     border:1px solid rgb(90, 178, 251);
     background-color: rgba(150, 199, 239, 0.386);
+    overflow-x: auto;
+    word-wrap: break-word;
 }
 .outline-card-child{
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+.outline-card-child img {
+    width: 100%;
+    max-width: 40em;
+    height: auto;
 }
 .box-model-container {
       background-color: #ffc2c2; /* Light mint background */
@@ -62,6 +72,7 @@
       border-radius: 4px;
       padding: 24px 32px;
       max-width: 800px;
+      width: 100%;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     }
 
@@ -117,7 +128,8 @@
         border:1px solid rgb(55, 217, 37);
         padding:1em;
         border-radius: 10px;
-        width:25em;
+        width: 100%;
+        max-width: 25em;
     }
     .span-text{
         background-color: rgba(255, 115, 115, 0.45);
@@ -125,4 +137,125 @@
         border-radius: 5px;
         font-weight: bold;
         color: darkred;
+    }
+
+    /* ===== Responsive Iframe Wrapper ===== */
+    .video,
+    .sub-chapter iframe,
+    .chapter iframe {
+        max-width: 100%;
+    }
+    iframe {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* ===== Inline-styled images: override fixed widths ===== */
+    .sub-chapter img,
+    .chapter > img {
+        max-width: 100% !important;
+        height: auto !important;
+        width: auto;
+    }
+
+    /* ===== Side-by-side code/result flex containers ===== */
+    .sub-chapter > div[style*="display: flex"] {
+        flex-wrap: wrap;
+    }
+
+    /* ===== TABLET BREAKPOINT (≤992px) ===== */
+    @media (max-width: 992px) {
+        .web-development {
+            padding: 2.5em;
+        }
+        .course {
+            padding: 1.5em;
+        }
+    }
+
+    /* ===== MOBILE BREAKPOINT (≤768px) ===== */
+    @media (max-width: 768px) {
+        .web-development {
+            padding: 1.5em;
+            gap: 1.5em;
+        }
+        .web-development img {
+            border-radius: 12px;
+        }
+        .course {
+            padding: 1em;
+            border-radius: 8px;
+        }
+        .chapter b {
+            font-size: medium;
+        }
+        .outline-card {
+            padding: 8px;
+            font-size: 0.85rem;
+        }
+        .box-model-container {
+            padding: 16px 20px;
+        }
+        .box-model-title {
+            font-size: 1.1rem;
+        }
+        .box-model-desc,
+        .box-model-list li {
+            font-size: 0.95rem;
+        }
+        .chapter-navigation {
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .chapter-navigation button {
+            min-width: 100px;
+            font-size: 0.9rem;
+        }
+        /* Stack side-by-side layouts vertically */
+        .sub-chapter > div[style*="display: flex"] {
+            flex-direction: column !important;
+        }
+        .outline-card-child img {
+            max-width: 100%;
+        }
+        pre.outline-card {
+            font-size: 0.8rem;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+    }
+
+    /* ===== SMALL MOBILE BREAKPOINT (≤480px) ===== */
+    @media (max-width: 480px) {
+        .web-development {
+            padding: 1em;
+            gap: 1em;
+        }
+        .web-development img {
+            border-radius: 8px;
+        }
+        .course {
+            padding: 0.75em;
+        }
+        .article h2 {
+            font-size: 1.3rem;
+        }
+        .chapter b {
+            font-size: 1rem;
+        }
+        .outline-card {
+            padding: 6px;
+            font-size: 0.8rem;
+        }
+        .box-model-container {
+            padding: 12px 14px;
+        }
+        .box-model-title {
+            font-size: 1rem;
+        }
+        .pdf {
+            max-width: 100%;
+        }
     }
