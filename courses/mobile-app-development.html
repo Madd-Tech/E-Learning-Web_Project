@@ -99,7 +99,7 @@
         <hr />
         <br />
         <div class="course">
-          <!-- <div class="chapter" data-chapter="1">
+          <div class="chapter" data-chapter="1">
             <b>Chapter #1: Introduction to Mobile Ecosystems</b> <br />
             <hr />
             <p>
@@ -178,147 +178,116 @@
               allowfullscreen
             ></iframe>
             <br />
-          </div> -->
+          </div>
           <hr class="chapter-divider" />
           <div class="chapter" data-chapter="2" hidden>
             <b>Chapter #2: Technological Framework Matrix</b> <br />
             <hr />
             <p>
-              Professional design pipelines rely on structured heuristics to
-              evaluate usability and ensure predictable interaction models.
+              Selecting the right tech stack dictates your team's architectural
+              agility and your app's platform adaptability.
             </p>
             <div class="sub-chapter">
-              <b>1. The Core Differences at a Glance</b> <br />
+              <b>1. Core Framework Breakdown</b> <br />
               <img
                 style="width: 45em; height: 20em"
-                src="img/UIUX-core.png"
+                src="img/Framework.png
+                  "
                 alt=""
               />
               <br />
 
               <br />
               <br />
-              <b>2. Essential Laws of UX Design</b><br /><br />
+              <b>2. Critical Mobile Constraints</b><br />
+              <p>
+                Mobile software engineers must account for hardware-level
+                limitations that rarely affect web-scale systems:
+              </p>
               <ul>
                 <li>
-                  <strong>Jacob's Law : </strong>Users spend most of their time
-                  on other websites. This means they expect your site or
-                  application to operate similarly to the design patterns they
-                  already understand.
+                  <strong>Lifecycle Management : </strong>The OS can kill
+                  background applications aggressively to reclaim RAM. State
+                  preservation routines must be written to prevent data loss.
                 </li>
                 <li>
-                  <strong>Fitt's Law : </strong> The time required to acquire a
-                  target is a function of the distance to and size of the
-                  target. Crucial action buttons (like checkout or save buttons)
-                  should be large and placed in accessible regions.
-                </li>
-                <li>
-                  <strong>Hick's Law : </strong>The time it takes to make a
-                  decision increases with the number and complexity of choices.
-                  Complex registration or onboarding tasks should be broken down
-                  into multi-step wizards to prevent user cognitive overload.
+                  <strong>Network Volatility : </strong> Mobile devices
+                  frequently hop across cellular networks and Wi-Fi dead zones.
+                  Apps should adopt offline-first architectures using local
+                  synchronization databases like SQLite or Realm.
                 </li>
               </ul>
               <br />
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/fYs2Mdyasuc?si=jG5Ki9-f95A5WIyt"
-                title="YouTube video player"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
             </div>
           </div>
           <div class="chapter" data-chapter="3">
-            <b>Chapter #3: Design Process & Developer Handover</b> <br />
+            <b>Chapter #3: Declarative UI Implementation Template</b> <br />
             <hr />
             <p>
-              Enterprise UI/UX operations leverage the
-              <strong>Double Diamond</strong> design process framework, divided
-              into four distinct operational phases:
+              Modern mobile development has shifted entirely from imperative UI
+              layouts (XML/Storyboards) to functional, state-driven declarative
+              design models.
             </p>
             <br />
-            <strong>1. The Design Phases</strong> <br />
-            <ol>
-              <li>
-                <strong>Discover : </strong> Researching user pain points,
-                conducting empathy interviews, and gathering competitive market
-                insights
-              </li>
-              <li>
-                <strong>Define : </strong>
-                Synthesizing data into actionable User Personas and localized
-                problem statement hypotheses.
-              </li>
-              <li>
-                <strong>Develop : </strong>
-                Sketching structural ideas, structuring digital Information
-                Architectures (IA), and assembling clickable mid-fidelity
-                prototypes.
-              </li>
-              <li>
-                <strong>Deliver : </strong>
-                Running structured Usability Testing, refining interactive
-                details into a final high-fidelity system design, and building
-                the component-based Design System.
-              </li>
-            </ol>
+            <strong
+              >Cross-Platform UI Component Example (Flutter Framework)</strong
+            >
             <br />
-            <strong>2. Building a Design System</strong> <br />
             <p>
-              A Design System is a single source of truth that stores reusable
-              visual assets and functional components governed by clear design
-              rules. It scales the product systematically and aligns design
-              artifacts directly with engineering code libraries:
+              he code block below demonstrates how modern applications manage
+              reactive rendering states natively inside a component tree
             </p>
             <br />
-            <ul>
-              <li>
-                <strong>Design Tokens</strong>
-                Core style variables stored as key-value pairs (e.g., brand
-                colors, layout spacing grids, font sizes)
-              </li>
-              <li>
-                <strong>Atom Components : </strong>
-                Indivisible baseline items like primitive buttons, text input
-                blocks, and isolated icon sets
-              </li>
-              <li>
-                <strong>Molecule Assemblies : </strong>
-                Grouped components acting as a coordinated structure, such as a
-                search bar containing a text input field and a submit button.
-              </li>
-            </ul>
-            <br />
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/z6ElLJ8usLU?si=84VKPJN9CTguXsKG"
-              title="YouTube video player"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <pre class="outline-card">
+              import 'package:flutter/material.dart'; <br> <br>
+              void main()=> runApp(const EnterpriseMobileApp()); <br>
+              class EnterpriseMobileApp extends StatelessWidget { <br>
+               const EnterpriseMobileApp({Key? key}) : super(key:key); <br> <br>
+               @override <br>
+               Widget build(BuildContext context)  { <br>
+               return MaterialApp( <br>
+               theme: ThemeData(primarySwatch: Colors.emerald), <br>
+               home: const CounterScreen(), <br>
+               );<br>
+               }  <br>
+              } <br> <br>
+              class CounterScreen extends StatefulWidget { <br>
+                const CounterScreen({Key? key}) : super(key:key); <br> <br>
+                @override <br>
+                State createState() => _CounterScreenState(); <br>
+              } <br> <br>
+              class _CounterScreenState extends State { <br>
+                int _interactionCount = 0; <br> <br>
+                 void _incrementCounter() { <br>
+                  setState(() { <br>
+                    _interactionCount++; <br>
+                   }); <br>
+                 } <br>
+              } <br>
+               @override <br>
+  Widget build(BuildContext context) { <br>
+    return Scaffold( <br>
+      appBar: AppBar(title: const Text('State Management Core')), <br>
+      body: Center( <br>
+        child: Column( <br>
+          mainAxisAlignment: MainAxisAlignment.center, <br>
+          children: [ <br>
+            const Text('Total Safe Operations Extracted:', style: TextStyle(fontSize:  
+        
+16)), <br>
+            Text('$_interactionCount', style: const TextStyle(fontSize: 36, <br>
+fontWeight: FontWeight.bold)), <br>
+          ], <br>
+        ), <br>
+      ), <br>
+      floatingActionButton: FloatingActionButton( <br>
+        onPressed: _incrementCounter, <br>
+        child: const Icon(Icons.add), <br>
+      ), <br>
+    ); <br>
+  } <br>
+
+            </pre>
           </div>
           <div class="chapter-navigation">
             <button
@@ -343,7 +312,7 @@
         <button class="btn btn-success">
           <a
             class="text-white"
-            href="pdf.course/AI_Engineering.pdf
+            href="pdf.course/mobile-apps.pdf
             "
             >Download PDF</a
           >

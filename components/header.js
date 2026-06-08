@@ -13,8 +13,8 @@
         <li><a class="nav-link scrollto" href="${basePath}index.html#services">Services</a></li>
         <li><a class="nav-link scrollto" href="${basePath}index.html#portfolio">Courses</a></li>
         <li><a class="nav-link scrollto" href="${basePath}index.html#team">Team</a></li>
-        <li><a class="nav-link scrollto" href="${basePath}index.html#contact">Contact</a></li>
-        <li><a class="getstarted scrollto" href="${basePath}index.html#about">Get Started</a></li>
+        <li><a class="nav-link scrollto" href="${basePath}index.html#footer">Contact</a></li>
+        <li><a class="getstarted scrollto" href="${basePath}index.html#portfolio">Get Started</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>

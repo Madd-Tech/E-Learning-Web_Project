@@ -11,10 +11,9 @@
           <div class="footer-info">
             <h3>W3<span style="color: rgba(39, 124, 30, 1);">School</span></h3>
             <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@maddcourse.com<br>
+              Rådhusgata 6, Sandnes, Rogaland 4306, <br>
+              Sandnes, Rogaland, Norway<br><br>
+              <strong>Email:</strong> sales@w3schools.com<br>
             </p>
             <div class="social-links mt-3">
               <a href="https://www.youtube.com/@w3schools" class="youtube"><i class="bx bxl-youtube"></i></a>
@@ -31,9 +30,9 @@
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="${basePath}index.html">Home</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="${basePath}index.html#about">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses.html">Courses</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}index.html#portfolio">Courses</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}index.html#team">Team</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}index.html#faq">FaQ</a></li>
           </ul>
         </div>
 
@@ -45,6 +44,7 @@
             <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/data-science.html">Data Science</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/mobile-app-development.html">Mobile Apps</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/ai-engineering.html">AI Engineering</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="${basePath}courses/ui-ux-design.html">UI/UX Design</a></li>
           </ul>
         </div>
 
@@ -57,7 +57,7 @@
       &copy; Copyright <strong><span>W3School</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
-      Develop by <a href="https://bootstrapmade.com/">khrllhmr</a>
+      Develop by <a href="https://bootstrapmade.com/">khoirulloh</a>
     </div>
   </div>
 </footer>
